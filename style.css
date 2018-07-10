@@ -1,18 +1,54 @@
-h1 {font-size:120px;
+<!-- h1 {font-size:120px;
+	text-align: center;
 	color: rgb(255,150,50);
 }
 
 h2 {font-size:40px;
+	text-align: center;
 }
 
 p {font-size:30px;
+	font-family: Helvetica;
 }
 
-div {
-	border: 10px solid orange;
-	padding: 20px;
+img {height:450px;
+width:550px;
+padding-left:100px;
+}
+ -->
+ html {
+ 	font-family: sans-serif;
+ 	fontsize: 16px;
 }
 
-img {height:500px;
-width:600px;
+
+ header {
+ background-color: orange;
+ grid-column: span 3;
+ padding: 16px;
+}
+ nav {
+ background-color: red;
+ padding: 16px;
+}
+ main {
+ background-color: lightgray;
+ padding: 16px;
+}
+ aside {
+ background-color: green;
+ padding: 16px;
+}
+ footer {
+ background-color: magenta;
+ padding: 16px;
+ grid-column: span 3;
+}
+
+.container {
+	border: 2px solid rgba(0, 0, 0, 0.4);
+	display: grid;
+	min-height: 100vh;
+	grid-template-columns: 20% auto 20%;
+	grid-template-rows: auto 1fr auto;
 }
